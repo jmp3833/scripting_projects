@@ -78,7 +78,7 @@ def detect_bad_timelapse_frames
 
 	main_directory = ARGV[0] #timelapse root
 	destination_directory = ARGV[1] #Destnation of bad frames
-	temp_directory = ARGV[2] #Destination fo temp thumbnails
+	temp_directory = ARGV[2] #Destination of temp thumbnails
 
 	pngarray = Dir.glob("#{main_directory}**/*.png") # for all .png files
 	

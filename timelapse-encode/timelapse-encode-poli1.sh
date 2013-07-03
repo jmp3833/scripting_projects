@@ -7,8 +7,8 @@ if [ "$(id -u)" != "0" ]; then
    echo "This script must be run as root" 1>&2
    exit 1
 fi
-
-#ruby detect-bad-timelapse-framesp1.rb
+#Scrub bad timelapse framez
+ruby detect-bad-timelapse-frames.rb /mnt/icelab-timelapse/SAU-timelapse-daily/ /home/user/temp/ /home/user/temp/
 
 #Generates a filename for the final video
 FILENAME="poli1-timelapse-`date +%Y%m%d`"

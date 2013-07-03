@@ -8,7 +8,8 @@ if [ "$(id -u)" != "0" ]; then
    exit 1
 fi
 
-ruby detect-bad-timelapse-framesp2.rb
+#Scrub bad timelapse framez
+ruby detect-bad-timelapse-frames.rb /mnt/icelab-timelapse/SAU2-timelapse-daily/ /home/user/temp/ /home/user/temp/
 
 #Generates a filename for the final video
 FILENAME="poli2-timelapse-`date +%Y%m%d`"
